@@ -39,8 +39,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<><OtherSlider /><br /><br /><HelpBox /><Card /><br /><VideoLink /><br /><br /><br/><br /><FooterAbout/></>}/>
-          <Route path="/card/:id" element={<CardDes/>}/>
-          <Route path="/about" element={<FooterInfo/>}/>
+          <Route exact path="/card/:id" element={<CardDes/>}/>
+          <Route exact path="/about" element={<FooterInfo/>}/>
         </Routes>
       </Router>
 
