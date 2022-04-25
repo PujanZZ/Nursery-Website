@@ -1,7 +1,7 @@
 import React from 'react'
 import "./NavCss/FooterAbout.css"
 import 'font-awesome/css/font-awesome.min.css'
-import { useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 
 
 export default function FooterAbout() {
@@ -15,18 +15,19 @@ export default function FooterAbout() {
                         <div className="footer-col">
                             <h4>company</h4>
                             <ul>
-                                <li><a href="/about" onClick={() => about1(`/about`)}>about us</a></li>
+                                <li><a onClick={() => about1(`/about`)} style={{color:'#bbbbbb',cursor:'pointer'}} >about us</a></li>
+                             
                                 <li><a href="/">our services</a></li>
                                 <li><a href="/">privacy policy</a></li>
-                                <li><a href="/">affiliate program</a></li>
+                                
                             </ul>
                         </div>
                         <div className="footer-col">
                             <h4>get help</h4>
                             <ul>
-                                <li><a href="/">FAQ</a></li>
-                                <li><a href="/">shipping</a></li>
-                                <li><a href="/">returns</a></li>
+                                <li><a onClick={() => about1(`/faq`)} style={{color:'#bbbbbb',cursor:'pointer'}}>FAQ</a></li>
+                                
+                                
                                 <li><a href="/">order status</a></li>
                                 <li><a href="/">payment options</a></li>
                             </ul>

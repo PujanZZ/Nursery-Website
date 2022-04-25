@@ -5,11 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter,BrowserRouter } from 'react-router-dom';
 
+
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    
     <App />
-    </BrowserRouter>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
