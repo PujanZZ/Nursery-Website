@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,HashRouter} from "react-router-dom";
 
 
 //import './App.css';
@@ -36,11 +36,12 @@ import FaqList from "./components/FAQFolder/FaqList";
 function App() {
   return (
 
-    <>
+    <> 
+    <HashRouter basename="/">
 
 
       <Router>
-   
+     
         <Navbar />
         <Routes>
           <Route exact path="/" element={<><OtherSlider /><br /><br /><HelpBox /><Card /><br /><VideoLink /><br /><br /><br/><br /><FooterAbout/> </>}/>
@@ -50,7 +51,7 @@ function App() {
         </Routes>
       
       </Router>
-
+</HashRouter>
 
 
 
