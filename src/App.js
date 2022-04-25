@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, HashRouter,} from "react-router-dom";
+import { HashRouter as Router, Routes, Route, HashRouter, } from "react-router-dom";
 
 
 //import './App.css';
@@ -37,18 +37,19 @@ function App() {
   return (
 
     <>
+      <HashRouter>
+        <Router>
 
-      <Router>
-   <HashRouter>
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<><OtherSlider /><br /><br /><HelpBox /><Card /><br /><VideoLink /><br /><br /><br /><br /><FooterAbout /> </>} />
-          <Route exact path="/card/:id" element={<CardDes />} />
-          <Route exact path="/about" element={<FooterInfo />} />
-          <Route exact path="/faq" element={<FaqList />} />
-        </Routes>
-</HashRouter>
-      </Router>
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<><OtherSlider /><br /><br /><HelpBox /><Card /><br /><VideoLink /><br /><br /><br /><br /><FooterAbout /> </>} />
+            <Route exact path="/card/:id" element={<CardDes />} />
+            <Route exact path="/about" element={<FooterInfo />} />
+            <Route exact path="/faq" element={<FaqList />} />
+          </Routes>
+
+        </Router>
+      </HashRouter>
 
     </>
 
