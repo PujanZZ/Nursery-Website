@@ -2,12 +2,14 @@ import React , {useState} from 'react'
 import PropTypes from 'prop-types'
 import 'bootstrap/dist/css/bootstrap.css';
 import Login from './Login';
+import { useNavigate } from 'react-router-dom' 
 
 
 
 export default function Navbar(props) {
 
   const [showModel,setshowModel] = useState(false)
+  const about2 = useNavigate()
   //console.log(showModel)
 
 
@@ -30,7 +32,7 @@ export default function Navbar(props) {
                 <a className="nav-link" href="/">Leaderboard</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">About</a>
+                <a className="nav-link" onClick={() => about2(`/about`)} style={{cursor:"pointer"}}>About</a>
               </li>
 
             </ul>
