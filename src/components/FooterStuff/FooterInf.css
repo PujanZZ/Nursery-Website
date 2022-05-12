@@ -2,7 +2,7 @@
 
 .aboutus-section {
     padding: 90px 0;
-    background: linear-gradient(to bottom right, #87CF8E, #B8CF87);
+    background: linear-gradient(to bottom right, #ffffff, #e2e6db);
     font-family: Roboto;
 
 
@@ -23,7 +23,7 @@
     padding: 0 0 11px;
     position: relative;
     text-transform: uppercase;
-    color: #000;
+    color: #0B473F;
 }
 
 .aboutus-title::after {
@@ -37,7 +37,7 @@
 }
 
 .aboutus-text {
-    color: #606060;
+    color: #ffbe5d;
     font-size: 15px;
     line-height: 32px;
     margin: 0 0 45px;
@@ -45,6 +45,7 @@
     white-space: normal;
     inline-size: 55rem;
     font-weight: bold;
+    
 
 
 }
@@ -66,6 +67,8 @@ a:active {
     letter-spacing: 0;
     padding: 7px 20px;
     text-transform: uppercase;
+    font-style: italic;
+    text-decoration: none;
 }
 
 @media only screen and (max-width:767px) {

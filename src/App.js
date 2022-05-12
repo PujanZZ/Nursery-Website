@@ -21,6 +21,7 @@ import './components/LoginCss.css';
 import './components/NavCss/HelpBox.css';
 import './components/FAQFolder/FaqCss.css'
 
+
 import './components/NavCss/CardDes.css';
 import CardDes from "./components/CardDes";
 import "./components/NavCss/VideoL.css";
@@ -28,6 +29,10 @@ import FooterAbout from "./components/FooterAbout";
 import FooterInfo from "./components/FooterStuff/FooterInfo";
 import "./components/FooterStuff/FooterInf.css"
 import FaqList from "./components/FAQFolder/FaqList";
+import RandomImg from "./components/RandomImg";
+import './components/RandomImg.css'
+import Leaderboard from "./components/Leaderboard";
+import './Leaderboard.css'
 
 
 
@@ -37,19 +42,20 @@ function App() {
   return (
 
     <>
-      <HashRouter>
+    
         <Router>
 
-          <Navbar />
+           <Navbar /> 
           <Routes>
-            <Route exact path="/" element={<><OtherSlider /><br /><br /><HelpBox /><Card /><br /><VideoLink /><br /><br /><br /><br /><FooterAbout /> </>} />
+            <Route exact path="/" element={<><OtherSlider /><br /><br /><HelpBox /><Card /><br /><VideoLink /><br /><br /><br /><br /><RandomImg/><FooterAbout /> <br/> <Leaderboard/></>} />
             <Route exact path="/card/:id" element={<CardDes />} />
             <Route exact path="/about" element={<FooterInfo />} />
             <Route exact path="/faq" element={<FaqList />} />
+            <Route exact path="/leaderboard" element={<Leaderboard />} />
           </Routes>
 
         </Router>
-      </HashRouter>
+     
 
     </>
 

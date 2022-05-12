@@ -29,7 +29,7 @@ export default function Navbar(props) {
                 <a className="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">Leaderboard</a>
+                <a className="nav-link" onClick={() => about2(`/leaderboard`)} style={{cursor:"pointer"}}>Leaderboard</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" onClick={() => about2(`/about`)} style={{cursor:"pointer"}}>About</a>

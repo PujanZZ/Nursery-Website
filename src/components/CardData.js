@@ -4,7 +4,8 @@ export const CardData = [
         title: "",
         description: "4 Die Hard Succulents ",
         price: "699",
-        id:1
+        id:1,
+
     },
     {
         img: "https://i.imgur.com/ySZw3pv.png",
